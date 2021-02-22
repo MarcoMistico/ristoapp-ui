@@ -43,6 +43,8 @@
     "@nebular/eva-icons": "6.0.0",
     "@nebular/security": "6.0.0",
     "@nebular/theme": "6.0.0",
+    "@ng-web-apis/common": "^1.9.0",
+    "@ng-web-apis/geolocation": "^1.0.4",
     "bootstrap": "4.3.1",
     "classlist.js": "1.1.20150312",
     "core-js": "2.5.1",
