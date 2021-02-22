@@ -27,7 +27,7 @@ export class GetPositionComponent implements OnInit {
     this.message = "Lat: " + position.coords.latitude + " Lon: " + position.coords.longitude;
     this.http.post<any>('https://nominatim.openstreetmap.org/reverse?format=json&lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&zoom=18&addressdetails=1', { title: 'Angular POST Request Example' }).subscribe(data => {
       console.log(data);
-      this.message += "--------" + data.display_name;
+      this.message += "-------" + data.display_name;
   })
   }
 }
