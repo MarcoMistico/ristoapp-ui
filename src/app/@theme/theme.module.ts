@@ -40,6 +40,7 @@ import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 import { DARK_THEME } from './styles/theme.dark';
 import { RouterModule } from '@angular/router';
+import { Footer2Component } from './components/footer2/footer2.component';
 
 const NB_MODULES = [
   NbLayoutModule,
@@ -61,6 +62,7 @@ const COMPONENTS = [
   LayoutDirectionSwitcherComponent,
   HeaderComponent,
   FooterComponent,
+  Footer2Component,
   SearchInputComponent,
   OneColumnLayoutComponent,
   ThreeColumnsLayoutComponent,

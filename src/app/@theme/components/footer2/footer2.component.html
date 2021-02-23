@@ -1,0 +1,41 @@
+<!-- <div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()">RistoApp</a>
+  </div>
+<nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+  </nb-select>
+<ngx-layout-direction-switcher class="direction-switcher"></ngx-layout-direction-switcher> 
+</div> -->
+
+<div class="header-container">
+  <div class="row" style="width: 100%; margin-left: unset;">
+    <div class="col-3" style="text-align: center;">
+        <a [routerLink]="['./menu']" routerLinkActive="active"><nb-icon icon="clipboard-outline"></nb-icon>        
+            <br>
+            <span>Menù</span>
+        </a>
+    </div>
+    <div class="col-3" style="text-align: center;">
+        <a><nb-icon icon="heart-outline"></nb-icon>
+            <br>
+            <span>Preferiti</span>
+        </a>
+    </div>
+    <div class="col-3" style="text-align: center;">
+        <a><nb-icon icon="shopping-cart-outline"></nb-icon>
+            <br>
+            <span>Carrello</span>
+        </a>
+    </div>
+    <div class="col-3" style="text-align: center;">
+        <a><nb-icon icon="question-mark-circle-outline"></nb-icon>
+            <br>
+            <span>Aiuto</span>
+        </a>
+    </div>
+</div>
+</div>
