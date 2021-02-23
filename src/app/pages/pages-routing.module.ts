@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MenuComponent } from './menu/menu.component';
+import { FoodMenuComponent } from './food-menu/food-menu.component';
 
 const routes: Routes = [{
   path: '',
@@ -15,7 +15,7 @@ const routes: Routes = [{
     },
     {
       path: 'menu',
-      component: MenuComponent,
+      component: FoodMenuComponent,
     },
     {
       path: '',
