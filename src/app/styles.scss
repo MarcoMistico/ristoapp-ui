@@ -5,3 +5,7 @@ nb-layout-footer nav {
 nb-layout-footer nav a {
     text-decoration: none !important;
 }
+
+nb-layout > div.scrollable-container{
+    overflow-y: unset !important;
+}
