@@ -7,6 +7,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+nb-icon {
+  color: white;
+  font-size: 1.8rem;
+}
+
+span {
+  color: white;
+  text-decoration: none !important;
+}
 
   .socials {
     font-size: 2rem;
