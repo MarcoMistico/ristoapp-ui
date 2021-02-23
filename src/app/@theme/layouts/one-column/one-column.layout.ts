@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
       </nb-layout-column>
 
       <nb-layout-footer fixed>
-        <ngx-footer></ngx-footer>
+        <ngx-footer2></ngx-footer2>
       </nb-layout-footer>
     </nb-layout>
   `,
