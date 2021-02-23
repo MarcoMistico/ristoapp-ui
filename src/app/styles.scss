@@ -1,9 +1,12 @@
-nb-layout-footer nav {
-    background-color: #18191c !important;
+nb-layout-footer {
     position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 10000;
+}
+
+nb-layout-footer nav {
+    background-color: #18191c !important;
 }
 
 nb-layout-footer nav a {
