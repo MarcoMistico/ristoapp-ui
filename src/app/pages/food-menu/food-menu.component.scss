@@ -6,41 +6,11 @@
     margin-right: 1rem;
 }
 
-.main {
-  border-top-left-radius: 50px 40px;
-    border-top-right-radius: 50px 40px;
-    border-bottom-left-radius: 50px 40px;
-    border-bottom-right-radius: 50px 40px;
-}
-
-// .main {
-//   position: relative;
-//   height: 100%;
-//   // width: 325px;
-//   background-color: #b6d4d2;
-//   border-radius: 25px 25px 25px 0;
-// }
-
-// .main::before {
-//   content: "";
-//   position: absolute;
-//   background-color: transparent;
-//   bottom: -50px;
-//   height: 65px;
-//   width: 82px;
-//   border-top-left-radius: 92%;
-//   // border-top-right-radius: 92%;
-//   box-shadow: -10px -14px 0px 0 #b6d4d2;
-// }
-
 .scrolling-wrapper {
     &::-webkit-scrollbar {
         display: none;
       }
     overflow-x: scroll;
-    padding-top: 2rem;
-    border-top-left-radius: 50px 40px;
-    border-top-right-radius: 50px 40px;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;

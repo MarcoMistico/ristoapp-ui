@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <nb-layout windowMode>
 
-      <nb-layout-column style="margin-bottom: 60px; padding: unset;">
+      <nb-layout-column style="margin-bottom: 90px;">
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
 
