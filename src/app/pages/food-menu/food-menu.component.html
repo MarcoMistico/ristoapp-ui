@@ -42,23 +42,98 @@
     </div>
   </div>
 </div> -->
+<div class="title">
+  <h2>Menù</h2>
+</div>
+<hr>
 <div class="search-bar">
   <input type="text" nbInput fullWidth status="basic" placeholder="Cerca un piatto">
 </div>
 <div class="filter-bar" style="text-align: center;">
-  <button nbButton hero outline shape="round" size="small" status="basic">Antipasti</button>
-  <button nbButton hero outline shape="round" size="small" status="basic">Primi</button>
-  <button nbButton hero outline shape="round" size="small" status="basic">Secondi</button>
+  <div class="scrolling-wrapper">
+    <button nbButton hero outline shape="round" size="small" status="basic">Antipasti</button>
+    <button nbButton hero outline shape="round" size="small" status="basic">Primi</button>
+    <button nbButton hero outline shape="round" size="small" status="basic">Secondi</button>
+    <button nbButton hero outline shape="round" size="small" status="basic">Bevande</button>
+    <button nbButton hero outline shape="round" size="small" status="basic">Vini</button>
+    <button nbButton hero outline shape="round" size="small" status="basic">Dessert</button>
+  </div>
 </div>
-<div class="row">
+<div class="items" style="margin-top: 2rem;">
+  <div class="row">
+    <div class="col-6">
+      <nb-card style="border-radius: 15%;    box-shadow: 0 0.5rem 1rem 0 #2c33491a;      ">
+        <div class="preferiti">
+          <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+        </div>
+        <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="img-fluid" alt="Menu Item">
+        <div class="content-part-3-right-h4" routerLink="../item/186" style="text-align: center;">
+          <h5>Carbonara</h5>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col">
+            <div class="time">
+              25min.
+            </div>
+          </div>
+          <div class="col">
+            <div class="review">
+              ★4.9
+            </div>
+          </div>
+        </div>
+        <b style="color:green; text-align: center;">€12</b>
+        <button nbButton status="success">Aggiungi al carrello</button>
+      </nb-card>
+    </div>
+    <div class="col-6">
+      <nb-card style="border-radius: 15%;    box-shadow: 0 0.5rem 1rem 0 #2c33491a;      ">
+        <div class="preferiti">
+          <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+        </div>
+        <img src="assets/piatti/amatriciana.jpg" style="max-height: 93px;" routerLink="../item/186" class="img-fluid" alt="Menu Item">
+        <div class="content-part-3-right-h4" routerLink="../item/186" style="text-align: center;">
+          <h5>Amatriciana</h5>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col">
+            <div class="time">
+              25min.
+            </div>
+          </div>
+          <div class="col">
+            <div class="review">
+              ★4.7
+            </div>
+          </div>
+        </div>
+        <b style="color:green; text-align: center;">€11</b>
+        <button nbButton status="success">Aggiungi al carrello</button>
+      </nb-card>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      C
+    </div>
+    <div class="col">
+      D
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
 	<div class="content-part-3">
         <div class="col-md-6 col-sm-12 col-xs-12">
         	<div class="row content-part-3-inner">
                 <div class="col-md-5 col-sm-5 col-xs-12" align="center">
-                    <img src="assets/piatti/carbonara.jpg" class="img-responsive img" alt="Menu Item">
+                  <div class="preferiti">
+                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                  </div>
+                    <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="img-responsive img" alt="Menu Item">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="content-part-3-right-h4"><h4>Carbonara</h4></div>
+                    <div class="content-part-3-right-h4" routerLink="../item/186"><h4>Carbonara</h4></div>
                     <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€12</i></div>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
@@ -69,6 +144,9 @@
         <div class="col-md-6 col-sm-12 col-xs-12">
         	<div class="row content-part-3-inner">
                 <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                  <div class="preferiti">
+                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                  </div>
                     <img src="assets/piatti/amatriciana.jpg" class="img-responsive img" alt="Menu Item">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -83,6 +161,9 @@
         <div class="col-md-6 col-sm-12 col-xs-12">
         	<div class="row content-part-3-inner">
                 <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                  <div class="preferiti">
+                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                  </div>
                     <img src="assets/piatti/cacio-pepe.jpg"  class="img-responsive img" alt="Menu Item">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -94,9 +175,12 @@
             </div>
         </div>
         <hr>
-        <div class="col-md-6 col-sm-12 col-xs-12" style="margin-bottom: 20%;">
+        <div class="col-md-6 col-sm-12 col-xs-12">
         	<div class="row content-part-3-inner">
                 <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                  <div class="preferiti">
+                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                  </div>
                     <img src="assets/piatti/vongole.jpg" class="img-responsive img" alt="Menu Item">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -108,4 +192,4 @@
             </div>
         </div> 
     </div>
-</div>
+</div> -->

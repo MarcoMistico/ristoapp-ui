@@ -5,11 +5,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./one-column.layout.scss'],
   template: `
     <nb-layout windowMode>
-      <nb-layout-header fixed>
-        <ngx-header></ngx-header>
-      </nb-layout-header>
 
-      <nb-layout-column>
+      <nb-layout-column style="margin-bottom: 90px;">
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
 

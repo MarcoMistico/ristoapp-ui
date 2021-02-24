@@ -1,20 +1,34 @@
 nb-layout-footer {
+    // box-shadow: -5px 0rem 2rem 20px #2c33491a !important;
+    box-shadow: 5px 0rem 3rem 20px #2c33491a !important;
+    border-radius: 40% !important;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
     z-index: 10000;
     -webkit-backface-visibility: hidden !important;
 }
 
 nb-layout-footer nav {
-    background-color: #18191c !important;
+    // background-color: #18191c !important;
+}
+.scrollable-container::-webkit-scrollbar {
+    width: 0 !important;  /* Remove scrollbar space */
 }
 
+
 nb-layout-footer nav a {
-    color: white !important;
+    color: #b6d4d2 !important;
     text-decoration: none !important;
 }
 
 nb-layout > div.scrollable-container{
     overflow-y: unset !important;
+}
+
+nb-layout-footer nav {
+    border-top-left-radius: 50px 40px;
+    border-top-right-radius: 50px 40px;
+    box-shadow: 0 0.5rem 1rem 0 #2c33491a;
+
 }
