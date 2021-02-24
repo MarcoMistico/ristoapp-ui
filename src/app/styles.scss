@@ -9,6 +9,15 @@ nb-layout-footer {
     -webkit-backface-visibility: hidden !important;
 }
 
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+  }
+
+.scrollable-container::-webkit-scrollbar {
+    width: 0 !important;  /* Remove scrollbar space */
+}
+
 nb-layout-footer nav {
     // background-color: #18191c !important;
 }
@@ -19,7 +28,11 @@ nb-layout-footer nav a {
 }
 
 nb-layout > div.scrollable-container{
-    overflow-y: unset !important;
+    // overflow-y: unset !important;
+}
+
+nb-layout.window-mode .scrollable-container {
+    overflow-y: overlay !important;
 }
 
 nb-layout-footer nav {

@@ -42,87 +42,93 @@
     </div>
   </div>
 </div> -->
-<div class="search-bar">
-  <input type="text" nbInput fullWidth status="basic" placeholder="Cerca un piatto">
+<div class="navbar" style="padding: unset;">
+  <h3>Menù</h3>
 </div>
-<div class="filter-bar" style="text-align: center;">
-  <div class="scrolling-wrapper">
-    <button nbButton hero outline shape="round" size="small" status="basic">Antipasti</button>
-    <button nbButton hero outline shape="round" size="small" status="basic">Primi</button>
-    <button nbButton hero outline shape="round" size="small" status="basic">Secondi</button>
-    <button nbButton hero outline shape="round" size="small" status="basic">Bevande</button>
-    <button nbButton hero outline shape="round" size="small" status="basic">Vini</button>
-    <button nbButton hero outline shape="round" size="small" status="basic">Dessert</button>
-  </div>
+<div class="search-bar" style="border-bottom: 1px solid;">
+  <input type="text" style="font-family: FontAwesome; width:100%; border: none;" placeholder="&#xf002; Search..." />
+  <!-- <input type="text" nbInput fullWidth status="basic" placeholder="Cerca un piatto"> -->
 </div>
-<div class="row">
-	<div class="content-part-3">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-        	<div class="row content-part-3-inner">
-                <div class="col-md-5 col-sm-5 col-xs-12" align="center">
-                  <div class="preferiti">
-                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
-                  </div>
-                    <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="img-responsive img" alt="Menu Item">
-                </div>
-                <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="content-part-3-right-h4" routerLink="../item/186"><h4>Carbonara</h4></div>
-                    <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€12</i></div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="col-md-6 col-sm-12 col-xs-12">
-        	<div class="row content-part-3-inner">
-                <div class="col-md-5 col-sm-5 col-xs-12" align="center">
-                  <div class="preferiti">
-                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
-                  </div>
-                    <img src="assets/piatti/amatriciana.jpg" class="img-responsive img" alt="Menu Item">
-                </div>
-                <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="content-part-3-right-h4"><h4>Amatriciana</h4></div>
-                    <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€11</i></div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="col-md-6 col-sm-12 col-xs-12">
-        	<div class="row content-part-3-inner">
-                <div class="col-md-5 col-sm-5 col-xs-12" align="center">
-                  <div class="preferiti">
-                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
-                  </div>
-                    <img src="assets/piatti/cacio-pepe.jpg"  class="img-responsive img" alt="Menu Item">
-                </div>
-                <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="content-part-3-right-h4"><h4>Cacio e Pepe</h4></div>
-                    <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€12</i></div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="col-md-6 col-sm-12 col-xs-12">
-        	<div class="row content-part-3-inner">
-                <div class="col-md-5 col-sm-5 col-xs-12" align="center">
-                  <div class="preferiti">
-                    <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
-                  </div>
-                    <img src="assets/piatti/vongole.jpg" class="img-responsive img" alt="Menu Item">
-                </div>
-                <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="content-part-3-right-h4"><h4>Spaghetti alle Vongole</h4></div>
-                    <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€15</i></div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
-                </div>
-            </div>
-        </div> 
+<div class="main main2" style="background-color: #b6d4d2 !important;">
+  <div class="filter-bar" style="text-align: center;">
+    <div class="scrolling-wrapper">
+      <button nbButton hero outline shape="round" size="small" status="basic">Antipasti</button>
+      <button nbButton hero outline shape="round" size="small" status="basic">Primi</button>
+      <button nbButton hero outline shape="round" size="small" status="basic">Secondi</button>
+      <button nbButton hero outline shape="round" size="small" status="basic">Bevande</button>
+      <button nbButton hero outline shape="round" size="small" status="basic">Vini</button>
+      <button nbButton hero outline shape="round" size="small" status="basic">Dessert</button>
     </div>
+  </div>
+  <div class="row">
+    <div class="content-part-3">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row content-part-3-inner">
+                  <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                    <div class="preferiti">
+                      <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                    </div>
+                      <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="img-responsive img" alt="Menu Item">
+                  </div>
+                  <div class="col-md-7 col-sm-7 col-xs-12">
+                      <div class="content-part-3-right-h4" routerLink="../item/186"><h4>Carbonara</h4></div>
+                      <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€12</i></div>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row content-part-3-inner">
+                  <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                    <div class="preferiti">
+                      <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                    </div>
+                      <img src="assets/piatti/amatriciana.jpg" class="img-responsive img" alt="Menu Item">
+                  </div>
+                  <div class="col-md-7 col-sm-7 col-xs-12">
+                      <div class="content-part-3-right-h4"><h4>Amatriciana</h4></div>
+                      <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€11</i></div>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row content-part-3-inner">
+                  <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                    <div class="preferiti">
+                      <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                    </div>
+                      <img src="assets/piatti/cacio-pepe.jpg"  class="img-responsive img" alt="Menu Item">
+                  </div>
+                  <div class="col-md-7 col-sm-7 col-xs-12">
+                      <div class="content-part-3-right-h4"><h4>Cacio e Pepe</h4></div>
+                      <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€12</i></div>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row content-part-3-inner">
+                  <div class="col-md-5 col-sm-5 col-xs-12" align="center">
+                    <div class="preferiti">
+                      <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+                    </div>
+                      <img src="assets/piatti/vongole.jpg" class="img-responsive img" alt="Menu Item">
+                  </div>
+                  <div class="col-md-7 col-sm-7 col-xs-12">
+                      <div class="content-part-3-right-h4"><h4>Spaghetti alle Vongole</h4></div>
+                      <div class="price">Prezzo : <i class="green"><span class="fa fa-inr"></span>€15</i></div>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
+                  </div>
+              </div>
+          </div> 
+      </div>
+  </div>
 </div>
