@@ -42,6 +42,10 @@
     </div>
   </div>
 </div> -->
+<div class="title">
+  <h2>Menù</h2>
+</div>
+<hr>
 <div class="search-bar">
   <input type="text" nbInput fullWidth status="basic" placeholder="Cerca un piatto">
 </div>
@@ -55,7 +59,70 @@
     <button nbButton hero outline shape="round" size="small" status="basic">Dessert</button>
   </div>
 </div>
-<div class="row">
+<div class="items" style="margin-top: 2rem;">
+  <div class="row">
+    <div class="col-6">
+      <nb-card style="border-radius: 15%;    box-shadow: 0 0.5rem 1rem 0 #2c33491a;      ">
+        <div class="preferiti">
+          <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+        </div>
+        <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="img-fluid" alt="Menu Item">
+        <div class="content-part-3-right-h4" routerLink="../item/186" style="text-align: center;">
+          <h5>Carbonara</h5>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col">
+            <div class="time">
+              25min.
+            </div>
+          </div>
+          <div class="col">
+            <div class="review">
+              ★4.9
+            </div>
+          </div>
+        </div>
+        <b style="color:green; text-align: center;">€12</b>
+        <button nbButton status="success">Aggiungi al carrello</button>
+      </nb-card>
+    </div>
+    <div class="col-6">
+      <nb-card style="border-radius: 15%;    box-shadow: 0 0.5rem 1rem 0 #2c33491a;      ">
+        <div class="preferiti">
+          <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
+        </div>
+        <img src="assets/piatti/amatriciana.jpg" style="max-height: 93px;" routerLink="../item/186" class="img-fluid" alt="Menu Item">
+        <div class="content-part-3-right-h4" routerLink="../item/186" style="text-align: center;">
+          <h5>Amatriciana</h5>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col">
+            <div class="time">
+              25min.
+            </div>
+          </div>
+          <div class="col">
+            <div class="review">
+              ★4.7
+            </div>
+          </div>
+        </div>
+        <b style="color:green; text-align: center;">€11</b>
+        <button nbButton status="success">Aggiungi al carrello</button>
+      </nb-card>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      C
+    </div>
+    <div class="col">
+      D
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
 	<div class="content-part-3">
         <div class="col-md-6 col-sm-12 col-xs-12">
         	<div class="row content-part-3-inner">
@@ -125,4 +192,4 @@
             </div>
         </div> 
     </div>
-</div>
+</div> -->

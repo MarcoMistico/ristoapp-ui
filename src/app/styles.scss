@@ -12,6 +12,10 @@ nb-layout-footer {
 nb-layout-footer nav {
     // background-color: #18191c !important;
 }
+.scrollable-container::-webkit-scrollbar {
+    width: 0 !important;  /* Remove scrollbar space */
+}
+
 
 nb-layout-footer nav a {
     color: #b6d4d2 !important;
