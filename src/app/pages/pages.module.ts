@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbMenuModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbListModule, NbMenuModule, NbToggleModule } from '@nebular/theme';
 
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FoodMenuComponent } from './food-menu/food-menu.component';
+import { FoodDetailComponent } from './food-detail/food-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -13,14 +15,18 @@ import { FoodMenuComponent } from './food-menu/food-menu.component';
     ThemeModule,
     NbMenuModule,
     NbInputModule,
+    FormsModule,
     DashboardModule,
     NbCardModule,
+    NbToggleModule,
+    NbListModule,
     NbIconModule,
     NbButtonModule
   ],
   declarations: [
     PagesComponent,
-    FoodMenuComponent
+    FoodMenuComponent,
+    FoodDetailComponent
   ],
 })
 export class PagesModule {
