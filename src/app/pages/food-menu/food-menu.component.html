@@ -92,23 +92,30 @@
           <nb-icon style="font-size: 1.7rem;" icon="heart-outline"></nb-icon>
         </div>
         <img src="assets/piatti/amatriciana.jpg" style="max-height: 93px;" routerLink="../item/186" class="img-fluid" alt="Menu Item">
-        <div class="content-part-3-right-h4" routerLink="../item/186" style="text-align: center;">
-          <h5>Amatriciana</h5>
-        </div>
-        <div class="row" style="text-align: center;">
-          <div class="col">
-            <div class="time">
-              25min.
+        <div class="content-part-3-right-h4" routerLink="../item/186">
+          <div class="row">
+            <div class="col-6">
+              <b>Amatriciana</b>
+            </div>
+            <div class="col-6">
+              <b style="color:green; float: right;">€11</b>
             </div>
           </div>
-          <div class="col">
+        </div>
+        <div class="row" style="margin-top: 0.5rem;">
+          <div class="col-7">
+            <div class="time">
+              <nb-icon icon="clock-outline"></nb-icon>
+              <span>25min.</span>
+            </div>
+          </div>
+          <div class="col-5">
             <div class="review">
               ★4.7
             </div>
           </div>
         </div>
-        <b style="color:green; text-align: center;">€11</b>
-        <button nbButton status="success">Aggiungi al carrello</button>
+        <button nbButton style="margin-top: 0.5rem;" status="success"><nb-icon icon="shopping-cart-outline"></nb-icon></button>
       </nb-card>
 
     </div>
