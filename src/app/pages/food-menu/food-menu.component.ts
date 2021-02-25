@@ -13,15 +13,15 @@ export class FoodMenuComponent implements OnInit {
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private testService: TestService) { }
 
   ngOnInit(): void {
-    // this.authService.getAnonymousToken().subscribe(
-    //   data => {
-    //     this.tokenStorage.saveToken(data.accessToken);
-    //     this.guestTest();
-    //   },
-    //   err => {
-    //     console.log(err);
-    //   }
-    // );
+    this.authService.getAnonymousToken().subscribe(
+      data => {
+        this.tokenStorage.saveToken(data.accessToken);
+        this.guestTest();
+      },
+      err => {
+        console.log(err);
+      }
+    );
   }
 
   guestTest() {

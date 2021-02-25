@@ -5,6 +5,5 @@
  */
 export const environment = {
   production: true,
-  host: 'https://ristoapp-web.herokuapp.com/',
-  redirect_url: 'https://ristoapp-ui.firebaseapp.com/'
+  host: 'https://ristoapp-web.herokuapp.com/'
 };

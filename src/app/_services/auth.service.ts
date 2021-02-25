@@ -34,6 +34,6 @@ export class AuthService {
   }
 
   getAnonymousToken(): Observable<any> {
-    return this.http.post(AUTH_API + 'anonymousToken', httpOptions);
+    return this.http.get(AUTH_API + 'anonymousToken', httpOptions);
   }
 }

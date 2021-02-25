@@ -21,6 +21,7 @@ import {
   NbWindowModule,
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -42,6 +43,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     ThemeModule.forRoot(),
     NbEvaIconsModule,
   ],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent],
 })
 export class AppModule {
