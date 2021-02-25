@@ -1,3 +1,77 @@
+@media screen and (min-width: 768px) {
+  img {
+    // height: 16vw !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .item-control {
+    display: none !important;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  .card-img-top {
+    height: 35vw !important;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .item-control-star {
+    display: none !important;
+  }
+}
+
+.card-img-top {
+  // width: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 15px 0rem 1rem 0px #2c33491a;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1335px;
+  margin: 0 auto;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  // height: 550px;
+  flex-basis: 100%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media(min-width: 1073px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+@media(min-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
+
+
+
 .search-bar {
     margin-bottom: 1rem;
 }
@@ -13,8 +87,8 @@ img {
 }
 
 .review {
-  position: absolute;
-    right: 30px;
+  // position: absolute;
+  color: rgb(255, 196, 0)
 }
 
 .scrolling-wrapper {
