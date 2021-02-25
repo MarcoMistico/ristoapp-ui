@@ -6,6 +6,17 @@
     margin-right: 1rem;
 }
 
+img {
+  overflow: hidden;
+    position: relative;
+    height: 29vw;
+}
+
+.review {
+  position: absolute;
+    right: 30px;
+}
+
 .scrolling-wrapper {
     &::-webkit-scrollbar {
         display: none;
