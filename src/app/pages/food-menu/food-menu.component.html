@@ -61,21 +61,31 @@
 </div>
 <div class="items" style="margin-top: 1rem;">
   <div class="row" style="margin: unset;">
-    <div class="col-md-6" style="padding: unset;">
+    <div class="col-md-6" style="padding: 0.2rem;">
       <nb-card style="box-shadow: 0 0.5rem 1rem 0 #2c33491a;">
         <div class="row" style="margin: unset;">
           <div class="col-6" style="padding: unset;">
             <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" class="card-img-top" alt="Menu Item">
           </div>
-          <div class="col-6" style="padding: 0.5rem; text-align: center;">
-            <b style="font-size: 14px;">Carbonara</b>
-            <br>
-            <div class="review">
-              ★★★★★
+          <div class="col-6" style="padding: 1rem 3rem 1rem 0rem; text-align: center;">
+            <div class="text align-self-center" style="word-wrap: break-word;">
+              <b style="font-size: 14px;">Carbonara</b>
+              <br>
+              <div class="review">
+                ★★★★★
+              </div>
+              <!-- <div class="ingredients control-item-ingr">
+                <span style="font-size: 10px;">Spaghetti, Pomodoro, Guanciale, Pecorino romano, Pepe Nero</span> 
+              </div> -->
+              <div class="price">
+                <b style="color:green">€12</b>
+              </div>
             </div>
-            <div class="price">
-              <b style="color:green">€12</b>
-            </div>
+            <button nbButton
+            style="position: absolute; top: 0; right: 0; border-bottom-left-radius: 50%;"
+            status="danger">
+            <nb-icon icon="heart-outline"></nb-icon>
+            </button>
             <button nbButton
               style="margin-top: 0.5rem; position: absolute; bottom: 0; right: 0; border-top-left-radius: 50%;"
               status="success">
@@ -85,21 +95,31 @@
         </div>
       </nb-card>
     </div>
-    <div class="col-md-6" style="padding: unset;">
+    <div class="col-md-6" style="padding: 0.2rem;">
       <nb-card style="box-shadow: 0 0.5rem 1rem 0 #2c33491a;">
         <div class="row" style="margin: unset;">
           <div class="col-6" style="padding: unset;">
             <img src="assets/piatti/amatriciana.jpg" routerLink="../item/186" class="card-img-top" alt="Menu Item">
           </div>
-          <div class="col-6" style="padding: 0.5rem; text-align: center;">
-            <b style="font-size: 14px;">Amatriciana</b>
-            <br>
-            <div class="review">
-              ★★★★
+          <div class="col-6" style="padding: 1rem 3rem 1rem 0rem; text-align: center;">
+            <div class="text align-self-center" style="word-wrap: break-word;">
+              <b style="font-size: 14px;">Amatriciana</b>
+              <br>
+              <div class="review">
+                ★★★★
+              </div>
+              <!-- <div class="ingredients control-item-ingr">
+                <span style="font-size: 10px;">Spaghetti, Pomodoro, Guanciale, Pecorino romano, Pepe Nero</span> 
+              </div> -->
+              <div class="price">
+                <b style="color:green">€11</b>
+              </div>
             </div>
-            <div class="price">
-              <b style="color:green">€11</b>
-            </div>
+            <button nbButton
+            style="position: absolute; top: 0; right: 0; border-bottom-left-radius: 50%;"
+            status="danger">
+            <nb-icon icon="heart-outline"></nb-icon>
+            </button>
             <button nbButton
               style="margin-top: 0.5rem; position: absolute; bottom: 0; right: 0; border-top-left-radius: 50%;"
               status="success">
@@ -108,6 +128,76 @@
           </div>
         </div>
       </nb-card>
+    </div>
+    <div class="row" style="margin:unset;">
+      <div class="col-md-6" style="padding: 0.2rem;">
+        <nb-card style="box-shadow: 0 0.5rem 1rem 0 #2c33491a;">
+          <div class="row" style="margin: unset;">
+            <div class="col-6" style="padding: unset;">
+              <img src="assets/piatti/cacio-pepe.jpg" routerLink="../item/186" class="card-img-top" alt="Menu Item">
+            </div>
+            <div class="col-6" style="padding: 1rem 3rem 1rem 0rem; text-align: center;">
+              <div class="text align-self-center" style="word-wrap: break-word;">
+                <b style="font-size: 14px;">Cacio e Pepe</b>
+                <br>
+                <div class="review">
+                  ★★★★
+                </div>
+                <!-- <div class="ingredients control-item-ingr">
+                  <span style="font-size: 10px;">Spaghetti, Pomodoro, Guanciale, Pecorino romano, Pepe Nero</span> 
+                </div> -->
+                <div class="price">
+                  <b style="color:green">€11</b>
+                </div>
+              </div>
+              <button nbButton
+              style="position: absolute; top: 0; right: 0; border-bottom-left-radius: 50%;"
+              status="danger">
+              <nb-icon icon="heart-outline"></nb-icon>
+              </button>
+              <button nbButton
+                style="margin-top: 0.5rem; position: absolute; bottom: 0; right: 0; border-top-left-radius: 50%;"
+                status="success">
+                <nb-icon icon="shopping-cart-outline"></nb-icon>
+              </button>
+            </div>
+          </div>
+        </nb-card>
+      </div>
+      <div class="col-md-6" style="padding: 0.2rem;">
+        <nb-card style="box-shadow: 0 0.5rem 1rem 0 #2c33491a;">
+          <div class="row" style="margin: unset;">
+            <div class="col-6" style="padding: unset;">
+              <img src="assets/piatti/vongole.jpg" routerLink="../item/186" class="card-img-top" alt="Menu Item">
+            </div>
+            <div class="col-6" style="padding: 1rem 3rem 1rem 0rem; text-align: center;">
+              <div class="text align-self-center" style="word-wrap: break-word;">
+                <b style="font-size: 14px;">Spaghetti alle Vongole</b>
+                <br>
+                <div class="review">
+                  ★★★★
+                </div>
+                <!-- <div class="ingredients control-item-ingr">
+                  <span style="font-size: 10px;">Spaghetti, Pomodoro, Guanciale, Pecorino romano, Pepe Nero</span> 
+                </div> -->
+                <div class="price">
+                  <b style="color:green">€14</b>
+                </div>
+              </div>
+              <button nbButton
+              style="position: absolute; top: 0; right: 0; border-bottom-left-radius: 50%;"
+              status="danger">
+              <nb-icon icon="heart-outline"></nb-icon>
+              </button>
+              <button nbButton
+                style="margin-top: 0.5rem; position: absolute; bottom: 0; right: 0; border-top-left-radius: 50%;"
+                status="success">
+                <nb-icon icon="shopping-cart-outline"></nb-icon>
+              </button>
+            </div>
+          </div>
+        </nb-card>
+      </div>
     </div>
   </div>
 </div>
