@@ -5,6 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FoodMenuComponent } from './food-menu/food-menu.component';
 import { FoodDetailComponent } from './food-detail/food-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +18,10 @@ const routes: Routes = [{
     {
       path: 'menu',
       component: FoodMenuComponent,
+    },
+    {
+      path: 'cart',
+      component: CartComponent,
     },
     {
       path: 'item/:id',
