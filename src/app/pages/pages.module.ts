@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbListModule, NbMenuModule, NbToggleModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbCheckboxModule, NbIconModule, NbInputModule, NbListModule, NbMenuModule, NbToggleModule } from '@nebular/theme';
 
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
@@ -17,6 +17,7 @@ import { CartComponent } from './cart/cart.component';
     NbMenuModule,
     NbInputModule,
     FormsModule,
+    NbCheckboxModule,
     DashboardModule,
     NbCardModule,
     NbToggleModule,

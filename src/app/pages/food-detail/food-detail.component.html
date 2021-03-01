@@ -26,7 +26,8 @@
                <li>Spaghetti</li> 
             </div>
             <div class="col-3">
-                <nb-toggle disabled style="float: right;" [checked]="true"></nb-toggle>
+                <!-- <nb-toggle disabled style="float: right;" [checked]="true"></nb-toggle> -->
+                <nb-checkbox disabled [checked]="true"></nb-checkbox>
             </div>
         </nb-list-item>
         <nb-list-item>
@@ -34,7 +35,8 @@
                 <li>Guanciale</li>
             </div>
             <div class="col-3">
-                <nb-toggle style="float: right;" [checked]="true"></nb-toggle>
+                <nb-checkbox [checked]="true"></nb-checkbox>
+                <!-- <nb-toggle style="float: right;" [checked]="true"></nb-toggle> -->
             </div>
         </nb-list-item>
         <nb-list-item>
@@ -42,7 +44,8 @@
                 <li>Tuorli di uova medie</li>
             </div>
             <div class="col-3">
-                <nb-toggle style="float: right;" [checked]="true"></nb-toggle>
+                <nb-checkbox [checked]="true"></nb-checkbox>
+                <!-- <nb-toggle style="float: right;" [checked]="true"></nb-toggle> -->
             </div>
         </nb-list-item>
         <nb-list-item>
@@ -50,7 +53,8 @@
                 <li>Pecorino romano</li>
             </div>
             <div class="col-3">
-                <nb-toggle style="float: right;" [checked]="true"></nb-toggle>
+                <nb-checkbox [checked]="true"></nb-checkbox>
+                <!-- <nb-toggle style="float: right;" [checked]="true"></nb-toggle> -->
             </div>
         </nb-list-item>
         <nb-list-item>
@@ -58,11 +62,12 @@
                 <li>Pepe Nero</li>
             </div>
             <div class="col-3"> 
-                <nb-toggle style="float: right;" [checked]="true"></nb-toggle>
+                <nb-checkbox [checked]="true"></nb-checkbox>
+                <!-- <nb-toggle style="float: right;" [checked]="true"></nb-toggle> -->
             </div>
         </nb-list-item>
       </nb-list>
 </div>
 <div class="cart" style="text-align: center;">
-    <div class="margin_p3"><a class="order-now">Aggiungi al Carrello</a></div>
+    <button nbButton hero status="success">Aggiungi al carrello ($11)</button>
 </div>

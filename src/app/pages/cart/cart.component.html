@@ -11,9 +11,9 @@
                 <p style="font-size: 2rem;">$12</p>
             </div>
             <div class="plusminus horiz">
-                <button></button>
-                <input type="number" name="productQty" value="1" min="1" max="10">
-                <button></button>
+                <button (click)="minusQuantity(valueprod1)"></button>
+                <input type="number" name="productQty" [value]=valueprod1 min="1" max="10">
+                <button (click)="plusQuantity(valueprod1)"></button>
             </div>
         </article>
         <article style="position: relative;">
@@ -44,9 +44,23 @@
 </div>
 <div class="total" style="margin-top: 1rem;">
     <nb-card>
-        <span style="padding: 0rem 1rem;">Subtotal: $45</span>
+        <div class="form-row" style="margin-top: 1rem;">
+            <div class="form-group col-6">
+                <span style="padding: 0rem 1rem;"> <b>Subtotal:</b>  </span>
+            </div>
+            <div class="form-group col-6">
+                <span style="float: right; margin-right: 2rem;"> $45</span>
+            </div>
+        </div>
         <hr>
-        <span style="padding: 0rem 1rem;">TOTAL: $48</span>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <span style="padding: 0rem 1rem;"> <b>TOTAL:</b>  </span>
+            </div>
+            <div class="form-group col-6">
+                <span style="float: right; margin-right: 2rem;"> $48</span>
+            </div>
+        </div>
     </nb-card>
 </div>
 
