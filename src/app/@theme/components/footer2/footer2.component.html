@@ -13,25 +13,30 @@
 
 <div class="header-container" style="height: 30px;">
   <div class="row" style="width: 100%; margin-left: unset;">
-    <div class="col-3" style="text-align: center;">
+    <div class="col-4" style="text-align: center;">
         <a [routerLink]="['./menu']" routerLinkActive="active"><nb-icon icon="clipboard-outline"></nb-icon>        
             <br>
             <span>Menù</span>
         </a>
     </div>
-    <div class="col-3" style="text-align: center;">
+    <!-- <div class="col-3" style="text-align: center;">
         <a><nb-icon icon="heart-outline"></nb-icon>
             <br>
             <span>Preferiti</span>
         </a>
-    </div>
-    <div class="col-3" style="text-align: center;">
-        <a [routerLink]="['./cart']" routerLinkActive="active"><nb-icon icon="shopping-cart-outline"></nb-icon>
+    </div> -->
+    <div class="col-4" style="text-align: center;">
+        <a [routerLink]="['./cart']" routerLinkActive="active" style="position: relative;">
+          <div class="circle">
+            <p style="font-size: 0.5rem; color:white;">2</p>
+          </div>
+          <nb-icon icon="shopping-cart-outline">
+        </nb-icon>
             <br>
             <span>Carrello</span>
         </a>
     </div>
-    <div class="col-3" style="text-align: center;">
+    <div class="col-4" style="text-align: center;">
         <a><nb-icon icon="question-mark-circle-outline"></nb-icon>
             <br>
             <span>Aiuto</span>

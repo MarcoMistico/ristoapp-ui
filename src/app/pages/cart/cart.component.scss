@@ -427,7 +427,7 @@ hr {
 .grid {
     margin: 30px;
     display: grid;
-    grid-template-columns: repeat(50, 1fr);
+    grid-template-columns: repeat(80, 1fr);
     grid-gap: 20px;
     align-items: stretch;
     }
@@ -500,14 +500,14 @@ hr {
   
   @media (max-width: 768px){
     .grid{
-      grid-template-columns: repeat(50, 1fr);
+      grid-template-columns: repeat(80, 1fr);
       margin: 0;
     }
   }
   
   @media (max-width: 500px){
     .grid{
-      grid-template-columns: repeat(50, 1fr);
+      grid-template-columns: repeat(80, 1fr);
       margin: 0;
     }
   
@@ -657,4 +657,9 @@ body {font-family: BlinkMacSystemFont, futura, 'Roboto', sans-serif;}
       }
     }
   }
+}
+
+.items {
+  border-top: 1px solid #0000001a;
+  padding-top: 1rem;
 }

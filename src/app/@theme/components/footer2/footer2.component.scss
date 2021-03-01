@@ -79,3 +79,13 @@
     }
   }
 }
+
+.circle {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  border-radius: 50%;
+}

@@ -49,7 +49,7 @@
 <div class="search-bar">
   <input type="text" nbInput fullWidth status="basic" placeholder="Cerca un piatto">
 </div>
-<div class="filter-bar" style="text-align: center;">
+<!-- <div class="filter-bar" style="text-align: center;">
   <div class="scrolling-wrapper">
     <button nbButton hero outline shape="round" size="small" status="basic">Antipasti</button>
     <button nbButton hero outline shape="round" size="small" status="basic">Primi</button>
@@ -58,59 +58,108 @@
     <button nbButton hero outline shape="round" size="small" status="basic">Vini</button>
     <button nbButton hero outline shape="round" size="small" status="basic">Dessert</button>
   </div>
+</div> -->
+<hr>
+<div class="subtext">
+  <h5>Antipasti</h5>
 </div>
 <div class="items" style="margin-top: 1rem;">
-  <main class="grid">
+  <main class="grid scrolling-wrapper" style="white-space: unset;">
+    <article style="position: relative;">
+      <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
+      <img src="assets/piatti/bruschetta.jpg" routerLink="../item/186" alt="Sample photo">
+      <div class="text">
+        <b>Bruschetta</b>
+        <div class="review">
+          ★★★ 3.9
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
+        <button nbButton style="display: flex;" (click)="atc()" hero status="success">Aggiungi al carrello ($3)</button>
+      </div>
+    </article>
+    <article style="position: relative;">
+      <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
+      <img src="assets/piatti/tagliere.jpg" routerLink="../item/186" alt="Sample photo">
+      <div class="text">
+        <b>Tagliere con Salumi e Formaggi</b>
+        <div class="review">
+          ★★★★★ 4.7
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($7)</button>
+      </div>
+    </article>
+    <article style="position: relative;">
+      <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
+      <img src="assets/piatti/caprese.jpg" routerLink="../item/186" alt="Sample photo">
+      <div class="text">
+        <b>Caprese</b>
+        <div class="review">
+          ★★★★★ 4.8
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($6)</button>
+      </div>
+    </article>
+  </main>
+</div>
+<hr>
+<div class="subtext" style="margin-top: 1rem;">
+  <h5>Primi</h5>
+</div>
+<div class="items" style="margin-top: 1rem;">
+  <main class="grid scrolling-wrapper" style="white-space: unset;">
     <article style="position: relative;">
       <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
       <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" alt="Sample photo">
       <div class="text">
-        <h3>Spaghetti alla Carbonara</h3>
+        <b>Spaghetti alla Carbonara</b>
         <div class="review">
           ★★★★★ 4.9
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
-        <button nbButton hero status="success">Aggiungi al carrello ($12)</button>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($12)</button>
       </div>
     </article>
     <article style="position: relative;">
       <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
       <img src="assets/piatti/amatriciana.jpg" routerLink="../item/186" alt="Sample photo">
       <div class="text">
-        <h3>Spaghetti alla Amatriciana</h3>
+        <b>Spaghetti alla Amatriciana</b>
         <div class="review">
           ★★★★★ 4.7
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
-        <button nbButton hero status="success">Aggiungi al carrello ($11)</button>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($11)</button>
       </div>
     </article>
     <article style="position: relative;">
       <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
       <img src="assets/piatti/cacio-pepe.jpg" routerLink="../item/186" alt="Sample photo">
       <div class="text">
-        <h3>Spaghetti Cacio e Pepe</h3>
+        <b>Spaghetti Cacio e Pepe</b>
         <div class="review">
           ★★★★★ 4.8
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
-        <button nbButton hero status="success">Aggiungi al carrello ($12)</button>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($12)</button>
       </div>
     </article>
     <article style="position: relative;">
       <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="heart-outline"></nb-icon></button>
       <img src="assets/piatti/vongole.jpg" routerLink="../item/186" alt="Sample photo">
       <div class="text">
-        <h3>Spaghetti alle Vongole</h3>
+        <b>Spaghetti alle Vongole</b>
         <div class="review">
           ★★★★★ 4.6
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?</p>
-        <button nbButton hero status="success">Aggiungi al carrello ($15)</button>
+        <button nbButton style="display: flex;" hero status="success">Aggiungi al carrello ($15)</button>
       </div>
     </article>
   </main>
 </div>
+
 
 <!-- <div class="items" style="margin-top: 1rem;">
   <div class="row" style="margin: unset;">

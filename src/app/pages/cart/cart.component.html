@@ -1,22 +1,24 @@
 <div class="title">
     <h2>Carrello</h2>
 </div>
-<hr>
 <div class="items" style="margin-top: 1rem;">
     <main class="grid scrolling-wrapper">
         <article style="position: relative;">
-            <img src="assets/piatti/carbonara.jpg" routerLink="../item/186" alt="Sample photo">
+            <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="close-outline"></nb-icon></button>
+            <img src="assets/piatti/caprese.jpg" routerLink="../item/186" alt="Sample photo">
             <div class="text">
-                <h3 style="font-size:1rem;">Spaghetti alla Carbonara</h3>
-                <p style="font-size: 2rem;">$12</p>
+                <h3 style="font-size:1rem;">Caprese</h3>
+                <p style="font-size: 2rem;">$6</p>
             </div>
             <div class="plusminus horiz">
-                <button (click)="minusQuantity(valueprod1)"></button>
-                <input type="number" name="productQty" [value]=valueprod1 min="1" max="10">
+                <button *ngIf="valueprod1==1" disabled></button>
+                <button *ngIf="valueprod1>1" (click)="minusQuantity(valueprod1)"></button>
+                <input type="number" name="productQty" [value]="valueprod1" min="1" max="10">
                 <button (click)="plusQuantity(valueprod1)"></button>
             </div>
         </article>
         <article style="position: relative;">
+            <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="close-outline"></nb-icon></button>
             <img src="assets/piatti/amatriciana.jpg" routerLink="../item/186" alt="Sample photo">
             <div class="text">
                 <h3 style="font-size:1rem;">Spaghetti alla Amatriciana</h3>
@@ -28,7 +30,8 @@
                 <button></button>
             </div>
         </article>
-        <article style="position: relative;">
+        <!-- <article style="position: relative;">
+            <button nbButton hero status="control" style="border-radius: 50%; right:5px; top:5px; box-shadow: 2px 2px 6px 0px #0000004d; position: absolute; color:red;"><nb-icon icon="close-outline"></nb-icon></button>
             <img src="assets/piatti/vongole.jpg" routerLink="../item/186" alt="Sample photo">
             <div class="text">
                 <h3 style="font-size:1rem;">Spaghetti alle Vongole</h3>
@@ -39,7 +42,7 @@
                 <input type="number" name="productQty" value="1" min="1" max="10">
                 <button></button>
             </div>
-        </article>
+        </article> -->
     </main>
 </div>
 <div class="total" style="margin-top: 1rem;">
@@ -49,7 +52,7 @@
                 <span style="padding: 0rem 1rem;"> <b>Subtotal:</b>  </span>
             </div>
             <div class="form-group col-6">
-                <span style="float: right; margin-right: 2rem;"> $45</span>
+                <span style="float: right; margin-right: 2rem;"> $17</span>
             </div>
         </div>
         <hr>
@@ -58,7 +61,7 @@
                 <span style="padding: 0rem 1rem;"> <b>TOTAL:</b>  </span>
             </div>
             <div class="form-group col-6">
-                <span style="float: right; margin-right: 2rem;"> $48</span>
+                <span style="float: right; margin-right: 2rem;"> $20</span>
             </div>
         </div>
     </nb-card>
