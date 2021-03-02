@@ -1,6 +1,7 @@
 nb-card {
     width: 90vw;
-    height: 80vh;
+    // height: 75vh;
+    height: auto;
 }
 
 nb-card-body {
@@ -10,6 +11,8 @@ nb-card-body {
 img {
     width: 100%;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    object-fit: cover;
+    height: 18vh;
 }
 
 .row {
