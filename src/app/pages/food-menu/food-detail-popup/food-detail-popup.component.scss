@@ -2,10 +2,12 @@ nb-card {
     width: 90vw;
     // height: 75vh;
     height: auto;
+    margin: auto;
 }
 
 nb-card-body {
     padding: unset !important;
+    overflow-x: hidden;
 }
 
 img {

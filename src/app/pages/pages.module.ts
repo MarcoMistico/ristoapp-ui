@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbBadgeModule, NbButtonModule, NbCardModule, NbCheckboxModule, NbIconModule, NbInputModule, NbListModule, NbMenuModule, NbToggleModule } from '@nebular/theme';
+import { NbAccordionModule, NbBadgeModule, NbButtonModule, NbCardModule, NbCheckboxModule, NbIconModule, NbInputModule, NbListModule, NbMenuModule, NbStepperModule, NbToggleModule } from '@nebular/theme';
 
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
@@ -18,12 +18,14 @@ import { FoodDetailPopupComponent } from './food-menu/food-detail-popup/food-det
     NbMenuModule,
     NbInputModule,
     FormsModule,
+    NbStepperModule,
     NbCheckboxModule,
     DashboardModule,
     NbCardModule,
     NbToggleModule,
     NbListModule,
     NbBadgeModule,
+    NbAccordionModule,
     NbIconModule,
     NbButtonModule
   ],

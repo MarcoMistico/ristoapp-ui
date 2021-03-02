@@ -8,6 +8,12 @@ nb-layout-footer {
     z-index: 1000;
     -webkit-backface-visibility: hidden !important;
 }
+nb-stepper > div.header {
+    padding: 1rem;
+}
+nb-checkbox > label > span.text {
+    line-height: 1rem !important;
+}
 
 nb-layout-footer nav {
     // background-color: #18191c !important;
