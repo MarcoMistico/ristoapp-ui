@@ -9,6 +9,7 @@ import { FoodMenuComponent } from './food-menu/food-menu.component';
 import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { FormsModule } from '@angular/forms';
 import { CartComponent } from './cart/cart.component';
+import { FoodDetailPopupComponent } from './food-menu/food-detail-popup/food-detail-popup.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { CartComponent } from './cart/cart.component';
     PagesComponent,
     FoodMenuComponent,
     FoodDetailComponent,
+    FoodDetailPopupComponent,
     CartComponent
   ],
 })

@@ -1,0 +1,55 @@
+<nb-card>
+    <nb-card-body>
+        <h5 style="position: absolute;">Bruschetta</h5>
+        <button nbButton (click)="close()" style="right: 0; position: absolute;" ghost status="danger">
+            <nb-icon icon="close-outline"></nb-icon>
+        </button>
+        <img src="assets/piatti/bruschetta.jpg">
+        <div class="desc" style="text-align: center;">
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi?
+            </span>
+        </div>
+        <hr>
+        <div class="ingredients" style="height: 20vh; overflow: scroll;">
+            <b style="margin: 1rem;">Seleziona Ingredienti:</b>
+            <div class="row">
+                <nb-checkbox disabled [checked]="true">Pane Casereccio</nb-checkbox>
+            </div>
+            <div class="row">
+                <nb-checkbox [checked]="true">Basilico</nb-checkbox>
+            </div>            
+            <div class="row">
+                <nb-checkbox [checked]="true">Olio</nb-checkbox>
+            </div>
+            <div class="row">
+                <nb-checkbox [checked]="true">Pepe Nero</nb-checkbox>
+            </div>
+            <div class="row">
+                <nb-checkbox [checked]="true">Pomodori</nb-checkbox>
+            </div>
+            <div class="row">
+                <nb-checkbox [checked]="true">Olio</nb-checkbox>
+            </div>
+            <div class="row">
+                <nb-checkbox [checked]="true">Sale Fino</nb-checkbox>
+            </div>
+        </div>
+        <hr>
+        <div class="note" style="margin:1rem;">
+            <textarea nbInput fullWidth placeholder="Inserire Note..."></textarea>
+        </div>
+        <hr>
+        <div class="quantity" style="text-align: center;">
+            <div class="plusminus horiz">
+                <button disabled></button>
+                <!-- <button *ngIf="valueprod1>1" (click)="minusQuantity(valueprod1)"></button> -->
+                <input type="number" name="productQty" value="1" min="1" max="10">
+                <button></button>
+            </div>
+        </div>
+        <div class="atc">
+            <button nbButton style="display: flex; margin: 1rem auto;" hero status="success">Aggiungi al carrello ($3)</button>
+        </div>
+    </nb-card-body>
+</nb-card>

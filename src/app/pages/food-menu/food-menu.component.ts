@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NbDialogService } from '@nebular/theme';
+import { FoodDetailComponent } from '../food-detail/food-detail.component';
+import { FoodDetailPopupComponent } from './food-detail-popup/food-detail-popup.component';
 
 @Component({
   selector: 'food-menu',
@@ -14,7 +17,15 @@ export class FoodMenuComponent implements OnInit {
     localStorage.setItem("quantity", String(this.cartQuantity));
   }
 
-  constructor() { }
+  constructor(private dialogService: NbDialogService) { }
+
+  openPopup() {
+    const dialogRef = this.dialogService.open(FoodDetailPopupComponent, {
+      context: {
+        title: 'Dettaglio',
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.cartQuantity = 0;

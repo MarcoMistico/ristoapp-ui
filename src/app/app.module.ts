@@ -22,6 +22,7 @@ import {
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { FoodDetailPopupComponent } from './pages/food-menu/food-detail-popup/food-detail-popup.component';
 
 @NgModule({
   declarations: [AppComponent],
